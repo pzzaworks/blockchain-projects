@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://painttoearn.io/sitemap.xml

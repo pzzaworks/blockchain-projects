@@ -1,0 +1,21 @@
+<section className="asseenon-section">
+    <img className="blobs blob10" src="media/blobs/blob7.png"/>
+    <div className="asseenoninfo">
+        <h2 data-aos="fade-up">As Seen On</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div className="asseenonlinks">
+        <ul>
+            <li data-aos="zoom-in" data-aos-delay="150" id="asseenonlink1"><a href="#"><img src="media/tempimage.png"/></a></li>
+            <li data-aos="zoom-in" data-aos-delay="200" id="asseenonlink2"><a href="#"><img src="media/tempimage.png"/></a></li>
+            <li data-aos="zoom-in" data-aos-delay="250" id="asseenonlink3"><a href="#"><img src="media/tempimage.png"/></a></li>
+            <li data-aos="zoom-in" data-aos-delay="300" id="asseenonlink4"><a href="#"><img src="media/tempimage.png"/></a></li>
+            <li data-aos="zoom-in" data-aos-delay="350" id="asseenonlink5"><a href="#"><img src="media/tempimage.png"/></a></li>  
+        </ul>
+    </div>
+</section>
+
+
+<a className="socialmenubuttons" href="#"><i className="fab fa-discord"></i></a>
+
+<a className="footersectionsocialmenubuttons" href="#"><i className="fab fa-discord"></i></a>

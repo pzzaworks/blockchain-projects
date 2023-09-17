@@ -1,0 +1,1382 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-display: swap;
+    background-color: #fefefe;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+span {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.875rem;
+    color: #eaeaf6;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .line {
+    display: block;
+    margin: auto;
+    width: 64%;
+    background-color: #d8d8d8;
+    border: 0.064rem solid #d8d8d8;
+    border-radius: 0.64rem;
+}
+
+.app .container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.app .navBar {
+    display: block;
+    padding-top: 1.128rem;
+    padding-bottom: 1.128rem;
+    padding-left: 2.66rem;
+    padding-right: 1.66rem;
+    width: calc(100vw - 3.32rem);
+    height: 2.64rem;
+    background-color: #fefefe;
+}
+
+.app .logo {
+    display: inline-block;
+    width: 2.64rem;
+    height: 2.64rem;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .logo img {
+    width: 2.64rem;
+    height: 2.64rem;
+}
+
+.app .subContainer {
+    display: block;
+    width: 100vw;
+    height: calc(100vh - 4.896rem);
+}
+
+.app .leftBar {
+    float: left;
+    width: 8rem;
+    height: calc(100vh - 4.896rem);
+    background-color: #fefefe;
+}
+
+.app .mainArea {
+    float: left;
+    width: calc(100vw - 32rem);
+    height: calc(100vh - 4.896rem);
+    background-color: #f2f2f2;
+    border-top-left-radius: 0.64rem;
+    border-top-right-radius: 0.64rem;
+}
+
+.app .rightBar {
+    float: left;
+    width: 24rem;
+    height: calc(100vh - 4.896rem);
+    background-color: #fefefe;
+}
+
+.app .blackButton {
+    color: #fefefe !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.app .previewNftImage {
+    margin-top: calc((100vh - 4.896rem) / 14.32);
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+    height: 640px;
+    border-radius: 0.64rem;
+    background-color: #e0e0e0;
+}
+
+.app .previewNftImage img{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.64rem;
+    pointer-events: none;
+}
+
+.app .imageButtons {
+    position: fixed;
+    bottom: 3.64rem;
+    left: calc((100vw - 37.32rem) / 2);
+}
+
+.app .imageButtons button {
+    display: inline-block;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem;
+    padding-right: 1.128rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .imageButtons button:nth-child(1) {
+    padding-top: 0.032rem;
+    padding-bottom: 0.128rem;
+    padding-left: 0.512rem;
+    padding-right: 0.512rem;
+    font-size: 1.32rem;
+}
+
+.app .imageButtons button:nth-child(3) {
+    padding-top: 0.032rem;
+    padding-bottom: 0.128rem;
+    padding-left: 0.456rem;
+    padding-right: 0.456rem;
+    font-size: 1.32rem;
+    margin-left: 0.64rem;
+}
+
+.app .imageButtons button:nth-child(4) {
+    margin-left: 2.128rem;
+    line-height: 0.825rem;
+}
+
+.app .imageButtons button:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .imageButtons button svg {
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}
+
+.app .imageButtons span {
+    display: inline-block;
+    padding-left: 0.512rem;
+    padding-right: 0.512rem;
+    margin-left: 0.728rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.app .leftBarTopDiv {
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: calc(100% - 14.92rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app .leftBarTopDiv::-webkit-scrollbar-track
+{
+	border-radius: 0.64rem;
+	background-color: #fefefe;
+}
+
+.app .leftBarTopDiv::-webkit-scrollbar{
+	width: 0.32rem;
+	background-color: #fefefe;
+}
+
+.app .leftBarTopDiv::-webkit-scrollbar-thumb
+{
+	border-radius: 0.64rem;
+	background-color: #c1c1c1;
+}
+
+.app .leftBarTopDiv button {
+    display: block;
+    margin-top: 0.64rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+    height: 5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    border-radius: 0.64rem;
+    background-color: transparent;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv svg{
+    font-size: 1.32rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv span{
+    margin-top: 0.728rem;
+    font-size: 0.64rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:hover{
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:hover span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:hover svg{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:active {
+    background-color: #e0e0e0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:active span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarTopDiv button:active svg{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarTopButton {
+    border-radius: 0.64rem;
+    background-color: #e6ebfe !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarTopButton span {
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarTopButton svg{
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv {
+    position: fixed;
+    left: 0;
+    bottom: 3.64rem;
+    width: 8rem;
+    height: 10rem;
+}
+
+.app .leftBarBottomDiv button {
+    display: block;
+    margin-top: 0.64rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+    height: 5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    border-radius: 0.64rem;
+    background-color: transparent;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:nth-child(2) {
+    margin-top: 1.128rem;
+}
+
+.app .leftBarBottomDiv svg{
+    font-size: 1.32rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv span{
+    margin-top: 0.728rem;
+    font-size: 0.64rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:hover{
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:hover span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:hover svg{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:active {
+    background-color: #e0e0e0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:active span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .leftBarBottomDiv button:active svg{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarBottomButton {
+    border-radius: 0.64rem;
+    background-color: #e6ebfe !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarBottomButton span {
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedLeftBarBottomButton svg{
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar{ 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app .paddingDiv {
+    display: block;
+    padding-bottom: 3.64rem;
+}
+
+.app .rightBar::-webkit-scrollbar-track
+{
+	border-radius: 0.64rem;
+	background-color: #fefefe;
+}
+
+.app .rightBar::-webkit-scrollbar{
+	width: 0.32rem;
+	background-color: #fefefe;
+}
+
+.app .rightBar::-webkit-scrollbar-thumb
+{
+	border-radius: 0.64rem;
+	background-color: #c1c1c1;
+}
+
+.app .rightBar h2 { 
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-left: -0.624rem;
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar h2 svg{ 
+    margin-left: 1.5rem;
+    padding-right: 1rem;
+    font-size: 1.32rem;
+    color: #000000;
+}
+
+.app .rightBar span { 
+    display: block;
+    margin-top: 2.24rem;
+    padding-left: 2.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar input { 
+    margin-top: 1.128rem;
+    margin-left: 2.64rem;
+    padding-top: 0.84rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem;
+    padding-right: 1.128rem;
+    width: 7.32rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #000000;
+    background-color: transparent;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar input:hover { 
+    color: #000000;
+    background-color: transparent;
+    border: 0.128rem solid #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .react-colorful {
+    margin-top: 2.128rem;
+    margin-left: 2.64rem;
+    width: 12.664rem;
+}
+
+.app .listSpan { 
+    word-break: break-all;
+    margin-top: 1.128rem !important;
+    color: #000000 !important;
+    text-transform: none !important;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem !important;
+    padding-right: 1.128rem;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 0.64rem;
+    width: calc(100% - 7.512rem);
+}
+
+.app .listSpan:hover { 
+    border: 0.128rem solid #787878 !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .listSpanFirst { 
+    word-break: break-all;
+    margin-top: 2.24rem !important;
+    color: #000000 !important;
+    text-transform: none !important;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem !important;
+    padding-right: 1.128rem;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 0.64rem;
+    width: calc(100% - 7.512rem);
+}
+
+.app .listSpanFirst:hover { 
+    border: 0.128rem solid #787878 !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .listSpan svg{ 
+    padding-right: 0.32rem;
+}
+
+.app .listSpanFirst svg{ 
+    padding-right: 0.32rem;
+}
+
+.app .rightBar .longInput { 
+    width: calc(100% - 7.64rem);
+}
+
+.app .rightBar button{ 
+    margin-top: 1.32rem;
+    margin-left: 2.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 0.64rem;
+    padding-right: 0.64rem;
+    width: 8.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #0f45ff;
+    background-color: transparent;
+    border: 0.128rem solid #0f45ff;
+    text-align: left;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar button:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar button svg {
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}
+.app .rightBar .longButton {
+    width: calc(100% - 6.32rem);
+}
+
+.app .rightBar .mediumButton {
+    width: calc(100% - 13.64rem);
+}
+
+.app .disabledButton{ 
+    pointer-events: none;
+    color: #787878 !important;
+    background-color: #e6ebfe !important;
+    border: 0.128rem solid #e6ebfe !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar label{ 
+    display: block;
+    text-decoration: none;
+    margin-top: 1.128rem;
+    margin-left: 2.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 0.64rem;
+    padding-right: 0.64rem;
+    width: 7.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #0f45ff;
+    background-color: transparent;
+    border: 0.128rem solid #0f45ff;
+    border-radius: 5rem;
+    text-align: left;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar label:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar label svg {
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}
+
+.app .smallButtons {
+    margin-left: 1.32rem;
+}
+
+.app .smallButtons button {
+    margin-left: 1.32rem;
+}
+
+.app .smallButtons label {
+    display: inline-block;
+    margin-left: 1.32rem;
+}
+
+.app .smallInputs {
+    margin-left: 1.32rem;
+}
+
+.smallInputs div {
+    display: inline-block;
+    width: max-content;
+    margin-left: 1.32rem;
+}
+
+.app .smallInputs span {
+    margin-top: 1.128rem;
+    padding-left: 0;
+}
+
+.app .smallInputs input {
+    margin-left: 0;
+    width: 6.128rem;
+}
+
+.app .rightBar select {
+    margin-top: 1.128rem;
+    margin-left: 2.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem;
+    padding-right: 1.128rem;
+    width: 8.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar select::placeholder {
+    color: #c1c1c1;
+}
+
+.app input::-webkit-outer-spin-button,
+.app input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.app input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.app .rightBar select:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .rightBar select:focus {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subLeftBar {
+    position: absolute;
+    float: left;
+    margin-top: 1.32rem;
+    margin-left: 1.32rem;
+    width: 7.32rem;
+    height: 34.128rem;
+    border-radius: 0.64rem;
+    background-color: #fefefe;
+}
+
+.app .subLeftBarDiv {
+    width: 7.32rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: calc(100% - 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app .subLeftBarDiv::-webkit-scrollbar-track
+{
+	border-radius: 0.64rem;
+	background-color: #fefefe;
+}
+
+.app .subLeftBarDiv::-webkit-scrollbar{
+	width: 0.32rem;
+	background-color: #fefefe;
+}
+
+.app .subLeftBarDiv::-webkit-scrollbar-thumb
+{
+	border-radius: 0.64rem;
+	background-color: #c1c1c1;
+}
+
+.app .subLeftBarDiv button {
+    display: block;
+    margin-top: 0.32rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+    height: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    border-radius: 0.64rem;
+    background-color: transparent;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subLeftBarDiv span{
+    margin-top: 0;
+    font-size: 0.64rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subLeftBarDiv button:hover{
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subLeftBarDiv button:hover span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedSubLeftBarDivButton {
+    background-color: #e6ebfe !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedSubLeftBarDivButton span {
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subSubLeftBar {
+    position: absolute;
+    float: left;
+    margin-top: 1.32rem;
+    margin-left: 9.96rem;
+    width: 8.64rem;
+    height: 34.128rem;
+    border-radius: 0.64rem;
+    background-color: #fefefe;
+}
+
+.app .subSubLeftBarDiv {
+    width: 8.64rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: calc(100% - 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app .subSubLeftBarDiv::-webkit-scrollbar-track
+{
+	border-radius: 0.64rem;
+	background-color: #fefefe;
+}
+
+.app .subSubLeftBarDiv::-webkit-scrollbar{
+	width: 0.32rem;
+	background-color: #fefefe;
+}
+
+.app .subSubLeftBarDiv::-webkit-scrollbar-thumb
+{
+	border-radius: 0.64rem;
+	background-color: #c1c1c1;
+}
+
+.app .subSubLeftBarDiv button {
+    display: block;
+    margin-top: 0.32rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+    height: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    border-radius: 0.64rem;
+    background-color: transparent;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subSubLeftBarDiv span{
+    margin-top: 0;
+    font-size: 0.64rem;
+    color: #c1c1c1;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subSubLeftBarDiv button:hover{
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .subSubLeftBarDiv button:hover span{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedSubSubLeftBarDivButton {
+    background-color: #e6ebfe !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .activatedSubSubLeftBarDivButton span {
+    color: #0f45ff !important;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .file {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.app .downloadNftBar {
+    position: fixed;
+    top: 1.24rem;
+    right: 12.64rem;
+}
+
+.app .downloadNftBar span{
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 1.64rem;
+    padding: 0;
+}
+
+.app .downloadNftBar button{
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 1.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 0.64rem;
+    padding-right: 1.128rem;
+    width: max-content;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    text-align: left;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .downloadNftBar button svg{
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}
+
+.app .downloadNftBar button:hover {
+    cursor: pointer;
+}
+
+.app .profileMenu {
+    position: fixed;
+    top: 1rem;
+    right: 2.32rem;
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.app .profileMenu img {
+    width: 2.72rem;
+    height: 2.72rem;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 0.64rem;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .profileMenu svg {
+    padding-left: 1.32rem;
+    vertical-align: 0.72rem;
+    font-size: 1.128rem;
+    color: #d8d8d8;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .profileMenu:hover {
+    cursor: pointer;
+}
+
+.app .profileMenu:hover img{
+    border: 0.128rem solid #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .profileMenu:hover svg{
+    color: #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .profileMenu:active img{
+    border: 0.128rem solid #e0e0e0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .profileMenu:active svg{
+    color: #e0e0e0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .nftItemNameEdit {
+    position: fixed;
+    top: 1.48rem;
+    left: 10.32rem;
+}
+
+.app .nftItemNameEdit span{
+    display: inline-block;
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.app .nftItemNameEdit button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -0.128rem;
+    margin-left: 1.64rem;
+    padding-top: 0.512rem;
+    padding-bottom: 0.512rem;
+    padding-left: 0.324rem;
+    padding-right: 0.324rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: #c1c1c1;
+    background-color: transparent;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .nftItemNameEdit button:hover {
+    cursor: pointer;
+    color: #787878;
+    background-color: transparent;
+    border: 0.128rem solid #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .nftItemNameEdit button:active {
+    color: #787878;
+    background-color: #e0e0e0;
+    border: 0.128rem solid #e0e0e0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .nftItemNameEdit button svg {
+    padding-left: 0.32rem;
+    padding-right: 0.32rem;
+    font-size: 0.725rem;
+}
+
+.app .draftButtons {
+    position: fixed;
+    top: 1.24rem;
+    left: 26.32rem;
+}
+
+.app .draftButtons button{
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 1.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 0.64rem;
+    padding-right: 0.64rem;
+    width: 9.24rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: #0f45ff;
+    line-height: 0.825rem;
+    background-color: transparent;
+    border: 0.128rem solid #0f45ff;
+    text-align: left;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .draftButtons button svg{
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}
+
+.app .draftButtons button:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.app .notification {
+    position: absolute;
+    display: block;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem;
+    padding-right: 1.128rem;
+    width: max-content;
+    top: 3.72rem;
+    right: 26.32rem;
+    background-color: #a3a3b7;
+    font-weight: 600;
+    font-size: 0.825rem;
+    text-transform: uppercase;
+    color: #fefefe;
+    border-radius: 5rem;
+    z-index: 1;
+    animation-name: notificationAnim, notificationAnim;
+    animation-direction: normal, reverse;
+    animation-duration: 0.164s, 0.164s;
+    animation-delay: 0s, 3.128s;
+    animation-fill-mode : forwards, forwards;
+}
+
+.app .notification svg {
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+}
+
+.app .default {
+    background-color: #a3a3b7 !important;
+}
+
+.app .error {
+    background-color: #ee4f4f !important;
+}
+
+.app .success {
+    background-color: #51d23a !important;
+}
+
+@keyframes notificationAnim {
+    from { 
+        opacity: 0; 
+        right: 24.32rem; 
+    }
+    to { 
+        opacity: 1; 
+        right: 26.32rem; 
+    }
+}
+
+.app.progressBarDiv {
+    position: absolute;
+    top: 4.896rem;
+    width: calc(100vw - 30rem);
+    height: 0.48rem;
+}
+
+.app.progressBar {
+    height: 0.48rem;
+    background-color: #0f45ff;
+    -webkit-transition: all 1.128s ease-in-out;
+    transition: all 1.128s ease-in-out;
+}
+
+.app.show {
+    display: block;
+}
+
+.app.hide {
+    display: none;
+}
+
+.login .container {
+    display: block;
+    margin: 0;
+    padding-top: 12rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fefefe;
+}
+
+.login .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3.64rem;
+    height: 3.64rem;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .logo img {
+    width: 3.64rem;
+    height: 3.64rem;
+}
+
+.login .loginWindow {
+    display: block;
+    margin-top: 2.64rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 22rem;
+    height: 28.64rem;
+    border-radius: 0.64rem;
+    background-color: #fefefe;
+}
+
+.login .loginWindow h2 { 
+    width: 100%;
+    padding-top: 1.32rem;
+    margin-left: -0.96rem;
+    padding-bottom: 0.128rem;
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow h2 svg{ 
+    margin-left: 1.5rem;
+    padding-right: 1rem;
+    font-size: 1.32rem;
+    color: #000000;
+}
+
+.login .line {
+    display: block;
+    margin: auto;
+    width: 64%;
+    background-color: #d8d8d8;
+    border: 0.064rem solid #d8d8d8;
+    border-radius: 0.64rem;
+}
+
+.login .loginWindow p { 
+    display: block;
+    margin-top: 2.24rem;
+    padding-left: 2.64rem;
+    padding-right: 2.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow span { 
+    display: block;
+    margin-top: 2.24rem;
+    padding-left: 2.64rem;
+    padding-right: 2.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow input { 
+    margin-top: 1.128rem;
+    margin-left: 2.64rem;
+    padding-top: 0.84rem;
+    padding-bottom: 0.64rem;
+    padding-left: 1.128rem;
+    padding-right: 1.128rem;
+    width: calc(100% - 7.64rem);
+    font-size: 0.725rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #000000;
+    background-color: transparent;
+    border: 0.128rem solid #d8d8d8;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow input:hover { 
+    color: #000000;
+    background-color: transparent;
+    border: 0.128rem solid #787878;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow button{ 
+    margin-top: 1.64rem;
+    margin-left: 2.64rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.64rem;
+    padding-left: 0.64rem;
+    padding-right: 0.64rem;
+    width: 8.64rem;
+    font-size: 0.725rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.825rem;
+    color: #0f45ff;
+    background-color: transparent;
+    border: 0.128rem solid #0f45ff;
+    text-align: left;
+    border-radius: 5rem;
+    outline: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow button:hover {
+    cursor: pointer;
+    color: #fefefe;
+    background-color: #0f45ff;
+    border: 0.128rem solid #0f45ff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.login .loginWindow button svg {
+    padding-left: 0.32rem;
+    padding-right: 0.64rem;
+    font-size: 0.875rem;
+}

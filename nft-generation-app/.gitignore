@@ -1,0 +1,7 @@
+client/public/downloads/*
+client/node_modules/*
+server/node_modules/*
+server/build/nftCollection/*
+server/build/nftCollectionWithRounds/*
+server/build/uploads/layers/*
+server/build/draft/uploads/layers/*

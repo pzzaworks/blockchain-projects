@@ -1,0 +1,13 @@
+{
+  "name": "simulacra_society_website",
+  "version": "1.0.0",
+  "description": "The Simulacra Society is an ecosystem that provides value to our community's projects. In addition to a worldwide commercial license, all Simulacra's NFT holders will have access to our community created projects including collaborative and future in the Simulacra World.",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mailchimp-api-v3": "^1.15.0"
+  },
+  "author": "Beaxvision <beaxvision@simulacrasociety.io> (https://simulacrasociety.io/)"
+}

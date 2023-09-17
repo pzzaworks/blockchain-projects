@@ -1,0 +1,14 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/simutubb/server"
+PassengerBaseURI "/server"
+PassengerNodejs "/home/simutubb/nodevenv/server/10/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+SetEnv MailChimp_API_Key 4ba217bfa15cc23f16a1c26df3f54a7d-us14
+SetEnv MailChimp_ListId bc0f202102
+SetEnv PORT 4000
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

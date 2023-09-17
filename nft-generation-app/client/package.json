@@ -1,0 +1,44 @@
+{
+  "name": "nft-generation-app",
+  "version": "1.0.0",
+  "description": "With this app, you can generate your own NFT Collections.",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.26.1",
+    "canvas": "^2.9.1",
+    "react-colorful": "^5.5.1",   
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "author": "Berke (pzzaworks) <berke@pzza.works> (http://pzza.works)",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}

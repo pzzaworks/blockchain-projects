@@ -1,0 +1,17 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/painkqui/server"
+PassengerBaseURI "/server"
+PassengerNodejs "/home/painkqui/nodevenv/server/10/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+SetEnv MYSQLCONNECTIONLIMIT 10
+SetEnv MYSQLDATABASE painkqui_paint_to_earn
+SetEnv MYSQLHOST premium253.web-hosting.com
+SetEnv MYSQLMULTIPLESTATEMENTS true
+SetEnv MYSQLPASSWORD BerkeAdmin!
+SetEnv MYSQLUSER painkqui_admin
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

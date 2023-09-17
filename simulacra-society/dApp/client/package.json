@@ -1,0 +1,53 @@
+{
+  "name": "simulacra_society_website",
+  "version": "1.0.0",
+  "description": "The Simulacra Society is an ecosystem that provides value to our community's projects. In addition to a worldwide commercial license, all Simulacra's NFT holders will have access to our community created projects including collaborative and future in the Simulacra World.",
+  "private": true,
+  "dependencies": {
+    "aos": "^2.3.4",
+    "framer-motion": "^6.2.8",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.27",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dotenv": "^0.1.3",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "^4.0.3",
+    "react-scroll": "^1.8.6",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1",
+    "web3-eth-contract": "^1.5.2"
+  },
+  "author": "Beaxvision <beaxvision@simulacrasociety.io> (https://simulacrasociety.io/)",
+  "scripts": {
+    "start": "react-dotenv && react-scripts start",
+    "build": "react-dotenv && react-scripts build",
+    "serve": "react-dotenv && serve build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "Whitelist_Addresses"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

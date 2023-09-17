@@ -1,0 +1,20 @@
+{
+  "name": "paint-to-earn-tables",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "formidable": "^2.0.1",
+    "fs-extra": "^10.1.0",
+    "http": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.5.1",
+    "web3": "^1.7.3"
+  },
+  "scripts": {
+    "start": "node tables.js"
+  }
+}

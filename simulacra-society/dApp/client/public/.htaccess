@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
+RewriteCond %{HTTP_HOST} ^simulacrasociety\.com$
+RewriteRule ^/?$ "https\:\/\/simulacrasociety\.io\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^simulacrasociety\.xyz$
+RewriteRule ^/?$ "https\:\/\/simulacrasociety\.io\/" [R=301,L]
